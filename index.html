@@ -1,0 +1,42 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="box-content">
+            <section>
+                <img src="images/computer.jpg" alt="a picture of a computer">
+                <div class="title-info centered">
+                    <h1>Gear Stop</h1>
+                    <p>We sell Iphones</p>
+                </div>
+            </section>
+            <div class="container" id="menu-box">
+                
+            </div>
+            <div class="your-order" id="your-order" hidden>
+                <h1>Your order:</h1>
+            </div>
+            <div class="total-box" id="total-box" hidden>
+                <div class="total-price" id="total-price">
+                    Total price: <span id="price"></span>
+                </div>
+                <button class="complete-order-btn" id="complete-order-btn">Complete order</button>
+            </div>
+            <div class="modal-popup hidden" id="modal-popup">
+                <form action="#">
+                    <h1 class="form-title">Enter card details</h1>
+                    <input type="text" placeholder="Enter your name" id="customer-name"required/>
+                    <input type="text" placeholder="Enter card number"/>
+                    <input type="text" placeholder="Enter CVV"/>
+                    <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
+                </form>
+            </div>
+            <div class="order-summary" id="order-summary" hidden>
+
+            </div>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
